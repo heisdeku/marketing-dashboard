@@ -70,7 +70,7 @@
                     </details>
                     <p>Shared with me</p>
                     <p>Recent</p>
-                    <p>Storred</p>
+                    <p>Stored</p>
                     <p>Trash</p>
                 </div>
             </div>
@@ -106,6 +106,7 @@
                         </div>
                         <div class="space_left"></div>
                     </div>
+                    <img src="./public/images/ellipsis-h.svg" alt="" class="info">
                 </div>
                 <div class="account p-4">
                     <div class="account_logo mv-5">
@@ -119,6 +120,7 @@
                         </div>
                         <div class="space_left"></div>
                     </div>
+                    <img src="./public/images/ellipsis-h.svg" alt="" class="info">
                 </div>
                 <div class="account p-4">
                     <div class="account_logo mv-5"></div>
@@ -130,6 +132,7 @@
                         </div>
                         <div class="space_left"></div>
                     </div>
+                    <img src="./public/images/ellipsis-h.svg" alt="" class="info">
                 </div>
             </div>
             <div class="row m-5">
@@ -143,7 +146,9 @@
                         <h5 class="folder_name">Analytics</h5>
                         <p class="folder_files-amount">15 files</p>
                     </div>
-                    <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    <div class="members-avatar">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    </div>
                 </div>
                 <div class="folder p-4">
                     <div class="part_one">
@@ -151,7 +156,10 @@
                         <h5 class="folder_name">Analytics</h5>
                         <p class="folder_files-amount">15 files</p>
                     </div>
-                    <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    <div class="members-avatar">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    </div>
                 </div>
                 <div class="folder p-4">
                     <div class="part_one">
@@ -159,7 +167,11 @@
                         <h5 class="folder_name">Analytics</h5>
                         <p class="folder_files-amount">15 files</p>
                     </div>
-                    <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    <div class="members-avatar">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images" style="right: 27px;">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images" style="right: 12px;">
+                        <img src="./public/images/profile.png" alt="Members Allowed Images" class="images">
+                    </div>
                 </div>
             </div>
             <div class="row m-5">
@@ -208,61 +220,74 @@
                 </table>
             </div>
         </section>
-        <section class="space">
+        <section class="space m-5">
             <div class="account_space-selected">
                 <div class="account-space">
                     <div class="one">
-                        <h3>45.5GB</h3>
+                        <h3 class="mv-4">45.5GB</h3>
                         <h5>Used</h5>
                     </div>
                     <div class="two">
-                        <h3>50GB</h3>
-                        <h5 class="upgrade">Upgrade</h5>
+                        <h3 class="mv-4">50GB</h3>
+                        <h5 class="upgrade more">Upgrade</h5>
                     </div>
                 </div>
+                <div class="space-percentage mv-4">
+                    <div class="image-space"></div>
+                    <div class="other-space"></div>
+                    <div class="media-space"></div>
+                </div>
                 <div class="files">
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-name">
-                            <h6>Images</h6>
-                            <p>1, 756 files</p>
+                    <div class="file mv-4">
+                        <div class="file-details">
+                            <img src="./public/images/img1.png" alt="" class="file-icon">
+                            <div class="file-name">
+                                <h6>Images</h6>
+                                <p>1, 756 files</p>
+                            </div>
                         </div>
                         <p class="file-space">
                             15.3GB
                         </p>
                     </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-name">
-                            <h6>Documents</h6>
-                            <p>123 files</p>
+                    <div class="file mv-4">
+                        <div class="file-details">
+                            <img src="./public/images/img1.png" alt="" class="file-icon">
+                            <div class="file-name">
+                                <h6>Documents</h6>
+                                <p>123 files</p>
+                            </div>
                         </div>
                         <p class="file-space">
                             256MB
                         </p>
                     </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-name">
-                            <h6>Media Files</h6>
-                            <p>254 files</p>
+                    <div class="file mv-4">
+                        <div class="file-details">
+                            <img src="./public/images/img1.png" alt="" class="file-icon">
+                            <div class="file-name">
+                                <h6>Media Files</h6>
+                                <p>254 files</p>
+                            </div>
                         </div>
                         <p class="file-space">
                             3.4GB
                         </p>
                     </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-name">
-                            <h6>Other Files</h6>
-                            <p>454 files</p>
+                    <div class="file mv-4">
+                        <div class="file-details">
+                            <img src="./public/images/img1.png" alt="" class="file-icon">
+                            <div class="file-name">
+                                <h6>Other Files</h6>
+                                <p>454 files</p>
+                            </div>
                         </div>
                         <p class="file-space">
                             3GB
                         </p>
                     </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
+                    <div class="file mv-4">
+                        <img src="./public/images/img1.png" alt="" class="file-icon">
                         <div class="file-name">
                             <h6>Unknown files</h6>
                             <p>57 files</p>
@@ -272,8 +297,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="upgrade_account">
-                    <div class="big-image"></div>
+                <div class="upgrade_account p-5">
+                    <div class="big-image">
+                        <img src="./public/images/upgade-img.png" alt="">
+                    </div>
                     <h3>Upgrade Account</h3>
                     <p>5 integrations, 30 team members,advanced features for teams</p>
                     <button class="btn upgrade-btn">Upgrade</button>
