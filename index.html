@@ -87,10 +87,6 @@
                     <span class="add"><img src="./public/images/plus.svg" alt=""></span>
                 </div>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-            </div>
         </section>
         <div class="hamburger">
             <span></span>
@@ -320,7 +316,26 @@
             </div>
         </section>
     </div>
-
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const sidebar = document.querySelector('.sidebar-navigation')
+        hamburger.addEventListener('click', () => {
+                console.log(this)
+                setStyle(hamburger, 'clicked', true);
+                setStyle(sidebar, 'is-open', true)
+            })
+            /**
+             * setStyle - param1:attribute;
+             * param2: new style
+             */
+        function setStyle(elem, style, toggle = false) {
+            if (toggle) {
+                elem.classList.toggle(style)
+            } else {
+                elem.style.style;
+            }
+        }
+    </script>
 </body>
 
 </html>

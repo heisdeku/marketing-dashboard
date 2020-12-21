@@ -727,6 +727,14 @@ table>thead th {
     .sidebar-navigation {
         display: none;
     }
+    .is-open {
+        position: absolute;
+        top: 10%;
+        display: block;
+        z-index: 5000;
+        background: var(--white);
+        width: 100%;
+    }
     .hamburger {
         bottom: 12px;
         position: fixed;
@@ -748,6 +756,17 @@ table>thead th {
     .hamburger span:nth-of-type(2) {
         width: 30px;
         float: right;
+    }
+    .hamburger.clicked span {
+        height: 5px;
+        width: 40px;
+    }
+    .hamburger.clicked span:nth-of-type(1) {
+        transform: translate(12%, 134%) rotate(56deg);
+    }
+    .hamburger.clicked span:nth-of-type(2) {
+        width: 100%;
+        transform: translate(10%, -67%) rotate(120deg);
     }
     .sidebar {
         padding: 10px;
