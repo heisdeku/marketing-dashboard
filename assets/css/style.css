@@ -26,7 +26,6 @@ body {
     color: var(--font);
     font-weight: var(--normal);
     font-size: 14px;
-    overflow: hidden;
     line-height: 120%;
 }
 
@@ -176,6 +175,7 @@ body {
     display: grid;
     grid-template-columns: 60px .5fr 2fr 22%;
     grid-template-rows: 100%;
+    height: 100vh;
 }
 
 .sidebar {
@@ -688,6 +688,10 @@ table>thead th {
     width: 145px;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 /*
 .upgrade_account::before {
@@ -700,3 +704,83 @@ table>thead th {
     left: -10px;
     z-index: -3;
 }*/
+
+
+/*media queries*/
+
+@media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar,
+    .navigation {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .sidebar-navigation {
+        display: none;
+    }
+    .hamburger {
+        bottom: 12px;
+        position: fixed;
+        display: block;
+        z-index: 10000;
+        padding: 8px 10px;
+        transition: 0.75s 500ms ease-in-out;
+        transform: none;
+        right: .5%;
+    }
+    .hamburger span {
+        height: 6px;
+        width: 50px;
+        background-color: var(--primary);
+        display: block;
+        margin: 3px 0px;
+        border-radius: .85rem;
+    }
+    .hamburger span:nth-of-type(2) {
+        width: 30px;
+        float: right;
+    }
+    .sidebar {
+        padding: 10px;
+        position: fixed;
+        height: 11%;
+        width: 100%;
+        z-index: 999999;
+    }
+    .navigation,
+    .navigation div.nav-item {
+        margin: 0;
+    }
+    img.user {
+        right: 5%;
+        top: 22%;
+    }
+    .dashboard-main {
+        overflow-y: visible;
+    }
+    .storage-accounts,
+    .my_folders {
+        flex-direction: column;
+        align-items: center;
+    }
+    .account,
+    .folder {
+        width: 93%;
+        margin-bottom: 20px;
+    }
+    .recents {
+        height: auto;
+    }
+    .account_space-selected {
+        margin-bottom: 10px;
+    }
+}
